@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مكتب المحامي ضرار الرحامنه - محاماة واستشارات قانونية | عمان</title>
     <meta name="description" content="استشارات قانونية موثوقة في عمان. محاماة جنائية، مدنية، تجارية، أسرية. اتصل الآن 07 7839 6484 - مفتوح 24/7">
-    <meta name="keywords" content="محامي عمان, استشارات قانونية الأردن, محاماة, ضرار الرحامنه">
+    <meta name="keywords" content="محامي عمان, استشارات قانونية الأردن, محاماة, ضرار الرحامنه, محاماة جنائية, استشارات عقود">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -22,5 +22,208 @@
 
         /* Hero Section */
         .hero { 
-            background: linear-gradient(rgba(30,58,138,0.85), rgba(59,130,246,0.7)), 
-                        url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80") center/cover no-repeat fix
+            background: linear-gradient(rgba(30,58,138,0.7), rgba(59,130,246,0.6)), 
+                        url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80") center/cover no-repeat fixed;
+            min-height: 100vh; padding: 150px 2rem 100px; text-align: center; color: white; display: flex; flex-direction: column; justify-content: center;
+        }
+        .hero-content h2 { font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1.5rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero-content p { font-size: clamp(1.1rem, 3vw, 1.4rem); margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto; font-weight: 300; }
+        .cta-buttons { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 18px 40px; font-weight: 600; text-decoration: none; border-radius: 50px; transition: all 0.3s; font-size: 1.1rem; position: relative; overflow: hidden; border: none; cursor: pointer; }
+        .btn-primary { background: linear-gradient(135deg, #10B981, #059669); color: white; box-shadow: 0 10px 30px rgba(16,185,129,0.4); }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(16,185,129,0.6); }
+        .btn-secondary { background: transparent; color: white; border: 2px solid rgba(255,255,255,0.9); backdrop-filter: blur(10px); }
+        .btn-secondary:hover { background: rgba(255,255,255,0.1); transform: translateY(-3px); }
+
+        /* Sections */
+        section { padding: 100px 2rem; max-width: 1200px; margin: auto; }
+        section h2 { text-align: center; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 4rem; color: #1e293b; position: relative; }
+        section h2::after { content: ""; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(135deg, #10B981, #059669); border-radius: 2px; }
+
+        /* Services */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
+        .service-card { 
+            background: white; padding: 2.5rem 2rem; border-radius: 20px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+            transition: all 0.4s; border: 1px solid rgba(16,185,129,0.1); position: relative; overflow: hidden;
+        }
+        .service-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(135deg, #10B981, #059669); }
+        .service-card:hover { transform: translateY(-15px); box-shadow: 0 30px 80px rgba(0,0,0,0.15); }
+        .service-icon { font-size: 4rem; color: #10B981; margin-bottom: 1.5rem; }
+        .service-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: #1e293b; }
+        .service-card p { color: #64748b; font-size: 1.1rem; }
+
+        /* Contact */
+        #contact { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); color: white; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; }
+        .contact-info h3 { font-size: 1.8rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem; }
+        .contact-item { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; font-size: 1.2rem; }
+        .contact-item i { font-size: 1.5rem; width: 40px; text-align: center; margin-top: 0.3rem; }
+        iframe { width: 100%; height: 450px; border-radius: 20px; border: 4px solid rgba(255,255,255,0.1); box-shadow: 0 20px 60px rgba(0,0,0,0.3); margin-top: 2rem; }
+        .contact-form { background: rgba(255,255,255,0.05); backdrop-filter: blur(20px); padding: 2.5rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); }
+        .contact-form h3 { margin-bottom: 2rem; font-size: 1.8rem; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 18px; margin-bottom: 1.5rem; border: 2px solid rgba(255,255,255,0.2); border-radius: 15px; background: rgba(255,255,255,0.1); color: white; font-family: inherit; font-size: 1.1rem; transition: border-color 0.3s; }
+        .contact-form input::placeholder, .contact-form textarea::placeholder { color: rgba(255,255,255,0.7); }
+        .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: #10B981; box-shadow: 0 0 0 3px rgba(16,185,129,0.1); }
+        .contact-form textarea { resize: vertical; min-height: 150px; }
+        .contact-form button { width: 100%; padding: 18px; background: linear-gradient(135deg, #10B981, #059669); color: white; border: none; border-radius: 15px; font-size: 1.2rem; font-weight: 600; cursor: pointer; transition: all 0.3s; }
+        .contact-form button:hover { transform: translateY(-2px); box-shadow: 0 15px 40px rgba(16,185,129,0.4); }
+
+        /* Footer */
+        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 3rem 2rem 2rem; }
+        footer p { margin-bottom: 1rem; }
+        .social-links { display: flex; justify-content: center; gap: 1.5rem; margin-top: 1rem; }
+        .social-links a { color: #94a3b8; font-size: 1.5rem; transition: color 0.3s; }
+        .social-links a:hover { color: #10B981; }
+
+        /* WhatsApp */
+        .whatsapp { position: fixed; bottom: 30px; left: 30px; background: linear-gradient(135deg, #25D366, #128C7E); color: white; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; box-shadow: 0 10px 30px rgba(37,211,102,0.4); z-index: 1000; transition: all 0.3s; }
+        .whatsapp:hover { transform: scale(1.1); box-shadow: 0 15px 40px rgba(37,211,102,0.5); }
+
+        /* Responsive */
+        @media (max-width: 768px) { 
+            nav { flex-direction: column; gap: 1rem; padding: 1rem; } 
+            nav ul { gap: 1rem; flex-wrap: wrap; justify-content: center; } 
+            .cta-buttons { flex-direction: column; align-items: center; } 
+            .btn { min-width: 250px; } 
+            section { padding: 60px 1.5rem; }
+            .contact-item { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1><i class="fas fa-gavel"></i> مكتب ضرار الرحامنه</h1>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="#services"><i class="fas fa-briefcase"></i> الخدمات</a></li>
+                <li><a href="#contact"><i class="fas fa-phone"></i> تواصل</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>استشارات قانونية <span style="color: #10B981;">موثوقة</span> في عمّان</h2>
+            <p>محاماة واستشارات قانونية متخصصة في القضايا الجنائية والمدنية والتجارية والأسرية<br><strong>خبرة واسعة | مفتوح 24/7 | سرية تامة</strong></p>
+            <div class="cta-buttons">
+                <a href="tel:+962778396484" class="btn btn-primary">
+                    <i class="fas fa-phone"></i> اتصل الآن 07 7839 6484
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="far fa-calendar-check"></i> احجز استشارة مجانية
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h2>خدماتنا القانونية المتخصصة</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-gavel"></i></div>
+                <h3>محاماة جنائية ومدنية</h3>
+                <p>تمثيل احترافي وقوي أمام جميع المحاكم الأردنية في القضايا الجنائية والمدنية بأعلى معدلات النجاح.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-file-contract"></i></div>
+                <h3>استشارات عقود وتجارية</h3>
+                <p>صياغة ومراجعة العقود التجارية والاستثمارية وضمان حماية حقوقك القانونية الكاملة.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-users"></i></div>
+                <h3>قضايا أسرية وإرث</h3>
+                <p>حلول سريعة وسرية لقضايا الطلاق، الحضانة، المواريث، والنفقة باحترافية ودقة.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-balance-scale"></i></div>
+                <h3>تمثيل أمام المحاكم</h3>
+                <p>دفاع قوي وكفؤ عن حقوقك أمام جميع درجات المحاكم الأردنية مع خبرة عملية عميقة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>تواصل مع مكتبنا القانوني</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3><i class="fas fa-map-marker-alt"></i> عنوان وتفاصيل المكتب</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-pin"></i>
+                    <div>
+                        <strong>ش. يثرب، عمّان 11822</strong><br>
+                        <small>إحداثيات الموقع: 2R7M+88</small>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <a href="tel:+962778396484" style="color: white; text-decoration: none;"><strong>07 7839 6484</strong></a><br>
+                        <small>متاح على مدار الساعة 24/7</small>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.475985421697!2d35.945285315228!3d31.950000311397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDU3JzAwLjAiTiAzNcKwNTYnMTUuMiJF!5e0!3m2!1sar!2sjo!4v1705145600000" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-form">
+                <h3><i class="far fa-paper-plane"></i> استفسارك الآن</h3>
+                <form id="contactForm">
+                    <input type="text" placeholder="الاسم الكامل" required>
+                    <input type="tel" placeholder="رقم الهاتف" required>
+                    <input type="email" placeholder="البريد الإلكتروني (اختياري)">
+                    <textarea placeholder="وصف استشارتك القانونية أو موضوع قضيتك" required></textarea>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> إرسال الاستفسار</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 مكتب المحامي ضرار الرحامنه للمحاماة والاستشارات القانونية<br>ش. يثرب، عمّان 11822 | 07 7839 6484 | جميع الحقوق محفوظة</p>
+        <div class="social-links">
+            <a href="#" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="إنستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/962778396484?text=مرحبا، أريد استشارة قانونية" class="whatsapp" target="_blank" title="واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = this.querySelector('input[type="text"]').value;
+            const phone = this.querySelector('input[type="tel"]').value;
+            const message = this.querySelector('textarea').value;
+            const whatsappMessage = `مرحبا، أنا ${name}\nرقم الهاتف: ${phone}\n\nالاستفسار:\n${message}`;
+            const whatsappUrl = `https://wa.me/962778396484?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappUrl, '_blank');
+            alert('شكراً! سيتم فتح واتساب لإرسال استفسارك للمحامي 📱');
+            this.reset();
+        });
+
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(30, 58, 138, 0.98)';
+            } else {
+                header.style.background = 'rgba(30, 58, 138, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
